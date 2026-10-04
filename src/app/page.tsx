@@ -1,3 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default function Home() {
-  return <div className="text-6xl">سلام دنیا!</div>;
+  const t = useTranslations("HomePage");
+
+  return <div className="font-high font-semibold">{t("title")}</div>;
 }

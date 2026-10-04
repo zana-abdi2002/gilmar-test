@@ -1,5 +1,6 @@
 import { abarHigh, abarLow, abarMid } from "@/fonts";
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       dir="rtl"
       className={`h-full antialiased ${abarHigh.variable} ${abarMid.variable} ${abarLow.variable}`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }
