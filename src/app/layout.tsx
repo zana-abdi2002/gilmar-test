@@ -16,7 +16,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`h-full antialiased ${abarHigh.variable} ${abarMid.variable} ${abarLow.variable}`}
     >
       <body className="flex min-h-full flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {/* <Header/> */}
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
