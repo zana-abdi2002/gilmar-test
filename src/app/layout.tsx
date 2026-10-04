@@ -1,3 +1,4 @@
+import { abarHigh, abarLow, abarMid } from "@/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -8,8 +9,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="fa-IR"
+      dir="rtl"
+      className={`h-full antialiased ${abarHigh.variable} ${abarMid.variable} ${abarLow.variable}`}
+    >
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }
