@@ -1,4 +1,7 @@
 import { abarHigh, abarLow, abarMid } from "@/fonts";
+import theme from "@/src/theme";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
@@ -17,8 +20,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
-          {/* <Header/> */}
-          {children}
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+            <ThemeProvider theme={theme}>
+              {/* <Header/> */}
+              {children}
+            </ThemeProvider>
+          </AppRouterCacheProvider>
         </NextIntlClientProvider>
       </body>
     </html>
