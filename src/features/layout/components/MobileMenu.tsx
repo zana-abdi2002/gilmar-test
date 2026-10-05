@@ -5,8 +5,8 @@ import IconButton from "@mui/material/IconButton";
 import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 import { navItems } from "../constants/nav-items";
-import NavLink from "./nav-link";
-import { CloseIcon, MenuIcon } from "./navbar-icons";
+import NavLink from "./NavLink";
+import { CloseIcon, MenuIcon } from "./NavbarIcons";
 
 function MobileMenu() {
   const t = useTranslations("Navbar");

@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import MobileMenu from "./components/mobile-menu";
-import NavLink from "./components/nav-link";
-import { UserIcon } from "./components/navbar-icons";
+import MobileMenu from "./components/MobileMenu";
+import NavLink from "./components/NavLink";
+import { UserIcon } from "./components/NavbarIcons";
 import { navItems } from "./constants/nav-items";
 
 function HomeNavbar() {

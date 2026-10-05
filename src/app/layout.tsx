@@ -1,4 +1,4 @@
-import Navbar from "@/features/layout/navbar";
+import Navbar from "@/features/layout/Navbar";
 import { abarHigh, abarLow, abarMid } from "@/fonts";
 import theme from "@/src/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";

@@ -1,4 +1,4 @@
-import BackgroundEllipses from "./background-ellipses";
+import BackgroundEllipses from "./BackgroundEllipses";
 
 function HeroSection() {
   return (
