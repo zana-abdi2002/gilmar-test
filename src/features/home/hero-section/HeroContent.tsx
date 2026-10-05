@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import HeroAction from "./HeroAction";
+import HeroActionButton from "./HeroActionButton";
 
 async function HeroContent() {
   const t = await getTranslations("HeroContent");
@@ -24,7 +24,7 @@ async function HeroContent() {
       </div>
 
       {/* Button */}
-      <HeroAction />
+      <HeroActionButton />
     </section>
   );
 }
