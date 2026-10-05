@@ -1,16 +1,18 @@
+import HeroSection from "@/features/home/components/HeroSection";
+
 export default function Home() {
   return (
-    <div>
-      {/* <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ResidencesSection />
-      <PackagesSection />
-      <VideoSection />
-      <RulesSection />
-      <BlogSection />
-      <TestimonialsSection />
-      <FaqSection /> */}
-    </div>
+    <main>
+      <HeroSection />
+      {/*<AboutSection />
+        <ServicesSection />
+        <ResidencesSection />
+        <PackagesSection />
+        <VideoSection />
+        <RulesSection />
+        <BlogSection />
+        <TestimonialsSection />
+        <FaqSection /> */}
+    </main>
   );
 }
