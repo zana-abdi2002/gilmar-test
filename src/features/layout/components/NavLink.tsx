@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { isCurrentPath } from "../utils/isCurrentPath";
 
 const baseClassName =
   "font-mid text-foreground hover:text-primary-start aria-[current=page]:text-primary-start focus-ring text-sm font-semibold transition-[color,transform] duration-200 hover:-translate-y-0.5 motion-reduce:transform-none motion-reduce:transition-none";
@@ -21,10 +22,7 @@ type NavLinkProps = {
 
 function NavLink({ href, variant, onNavigate, children }: NavLinkProps) {
   const pathname = usePathname();
-  const isCurrent =
-    href === "/"
-      ? pathname === "/"
-      : pathname === href || pathname.startsWith(`${href}/`);
+  const isCurrent = isCurrentPath(pathname, href);
 
   return (
     <Link
