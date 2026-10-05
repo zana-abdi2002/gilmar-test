@@ -23,7 +23,7 @@ function MobileMenu() {
         aria-expanded={open}
         aria-controls={open ? menuId : undefined}
         onClick={() => setOpen(true)}
-        className="text-foreground focus-ring rounded-full lg:hidden"
+        className="text-foreground focus-ring rounded-full min-[830px]:hidden"
       >
         <MenuIcon className="size-6" />
       </IconButton>

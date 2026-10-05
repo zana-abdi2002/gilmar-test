@@ -11,7 +11,7 @@ function HomeNavbar() {
 
   return (
     <header className="border-navbar-border bg-navbar-surface ring-navbar-ring mx-auto w-full max-w-7xl rounded-full border p-1.5 ring-6">
-      <div className="flex min-h-13 items-center justify-between gap-3">
+      <div className="flex min-h-13 items-center justify-between min-[900px]:gap-3">
         {/* Logo */}
         <Link
           href="/"
@@ -29,8 +29,11 @@ function HomeNavbar() {
         </Link>
 
         {/* Links */}
-        <nav aria-label={t("primaryNavigation")} className="hidden lg:block">
-          <ul className="flex items-center gap-5 xl:gap-10">
+        <nav
+          aria-label={t("primaryNavigation")}
+          className="hidden min-[830px]:block"
+        >
+          <ul className="flex items-center gap-1 min-[900px]:gap-3 lg:gap-5 xl:gap-10">
             {navItems.map(({ key, href }) => (
               <li key={key}>
                 <NavLink href={href} variant="desktop">
