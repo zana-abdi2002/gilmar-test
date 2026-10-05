@@ -23,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <NextIntlClientProvider>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <ThemeProvider theme={theme}>
-              <div className="mx-auto w-[calc(100%-2rem)] max-w-7xl max-xl:px-5 max-sm:px-2">
+              <div className="mx-auto w-[calc(100%-2rem)] max-w-7xl pt-8 max-xl:px-5 max-sm:px-2">
                 <Navbar />
               </div>
               {children}
