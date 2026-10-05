@@ -14,11 +14,16 @@
   --navbar-ring: #ffffff;
   --navbar-on-gradient: #ffffff;
   --primary-highlight: rgb(255 255 255 / 0.24);
+  --hero-gallery-shadow: rgb(0 0 0 / 0.18);
+  --hero-gallery-shadow-hover: rgb(0 0 0 / 0.24);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-hero-gallery-shadow: var(--hero-gallery-shadow);
+  --color-hero-gallery-shadow-hover: var(--hero-gallery-shadow-hover);
 
   --color-primary-start: var(--primary-start);
   --color-primary-end: var(--primary-end);
