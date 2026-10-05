@@ -50,8 +50,8 @@ function HomeNavbar() {
             href="/login"
             className="bg-primary-gradient font-high text-navbar-on-gradient focus-visible:outline-foreground inline-flex min-h-13 items-center gap-2 rounded-full px-4 text-sm font-extrabold transition-[filter,transform] duration-200 hover:-translate-y-0.5 hover:brightness-90 focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transform-none motion-reduce:transition-none"
           >
+            <UserIcon className="size-7 shrink-0" />
             {t("login")}
-            <UserIcon className="size-5.5 shrink-0" />
           </Link>
 
           <MobileMenu />
