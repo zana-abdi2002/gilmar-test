@@ -16,11 +16,15 @@
   --primary-highlight: rgb(255 255 255 / 0.24);
   --hero-gallery-shadow: rgb(0 0 0 / 0.18);
   --hero-gallery-shadow-hover: rgb(0 0 0 / 0.24);
+  --hero-reservations-shadow:
+    0 2px 2px rgb(0 0 0 / 0.02), 0 10px 41px rgb(0 0 0 / 0.04);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --shadow-hero-reservations: var(--hero-reservations-shadow);
 
   --color-hero-gallery-shadow: var(--hero-gallery-shadow);
   --color-hero-gallery-shadow-hover: var(--hero-gallery-shadow-hover);
