@@ -6,7 +6,7 @@ function HeroGallery() {
   const t = useTranslations("HeroContent.HeroGallery");
 
   return (
-    <figure className="group relative isolate mx-auto w-full max-w-7xl">
+    <figure className="group relative isolate mx-auto w-full max-w-7xl overflow-hidden max-xl:px-5 max-sm:px-2">
       {/* The glow follows the colors and silhouette of the cut image. */}
       <div
         aria-hidden="true"
