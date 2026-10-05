@@ -1,3 +1,4 @@
+import Navbar from "@/features/layout/navbar";
 import { abarHigh, abarLow, abarMid } from "@/fonts";
 import theme from "@/src/theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
@@ -22,7 +23,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <NextIntlClientProvider>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <ThemeProvider theme={theme}>
-              {/* <Header/> */}
+              <div className="absolute inset-x-0 top-10 z-50 mx-auto w-[calc(100%-2rem)] max-w-7xl">
+                <Navbar />
+              </div>
               {children}
             </ThemeProvider>
           </AppRouterCacheProvider>

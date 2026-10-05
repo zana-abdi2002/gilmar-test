@@ -9,6 +9,10 @@
   --primary-end: #26e05a;
   --primary-soft: #b8f3c4;
   --surface-accent: #c5d8ff;
+  --navbar-surface: #fcfdfd;
+  --navbar-border: #eef3f7;
+  --navbar-ring: #ffffff;
+  --navbar-on-gradient: #ffffff;
 }
 
 @theme inline {
@@ -24,18 +28,23 @@
 
   --color-surface-accent: var(--surface-accent);
 
+  --color-navbar-surface: var(--navbar-surface);
+  --color-navbar-border: var(--navbar-border);
+  --color-navbar-ring: var(--navbar-ring);
+  --color-navbar-on-gradient: var(--navbar-on-gradient);
+
   --font-sans: var(--font-abar-mid);
   --font-low: var(--font-abar-low);
   --font-mid: var(--font-abar-mid);
   --font-high: var(--font-abar-high);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a1a1a;
     --foreground: #f5f8fa;
   }
-}
+} */
 
 body {
   background: var(--background);

@@ -1,5 +1,22 @@
 {
   "HomePage": {
     "title": "Hello world!"
+  },
+
+  "Navbar": {
+    "brandLink": "صفحه اصلی اقامتگاه گردشگری گیلمار",
+    "brandAlt": "اقامتگاه گردشگری گیلمار",
+    "primaryNavigation": "ناوبری اصلی",
+    "mobileNavigation": "ناوبری اصلی موبایل",
+    "menu": "فهرست",
+    "openMenu": "باز کردن فهرست",
+    "closeMenu": "بستن فهرست",
+    "login": "ورود یا ثبت‌نام",
+    "home": "خانه",
+    "suites": "سوئیت‌ها و اقامتگاه",
+    "about": "درباره گیلمار",
+    "guide": "راهنمای مهمان‌ها",
+    "magazine": "مجله گیلمار",
+    "contact": "تماس با ما"
   }
 }
