@@ -1,8 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+import { Suspense } from "react";
 import heroGalleryImage from "./assets/hero-gallery.webp";
 import HeroReservationsInfo from "./HeroReservationsInfo";
+import HeroReservationsInfoSkeleton from "./HeroReservationsInfoSkeleton";
 
 function HeroGallery() {
   const t = useTranslations("HeroContent.HeroGallery");
@@ -51,7 +53,9 @@ function HeroGallery() {
         aria-label="تعداد رزرو موفق"
         className="pointer-events-auto absolute inset-e-0 bottom-0 z-10 me-3 hidden h-20.5 w-50 items-center justify-start overflow-hidden rounded-4xl ps-5 pt-5 max-lg:inset-s-0 max-lg:ms-1 min-[840px]:block"
       >
-        <HeroReservationsInfo />
+        <Suspense fallback={<HeroReservationsInfoSkeleton />}>
+          <HeroReservationsInfo />
+        </Suspense>
       </aside>
     </figure>
   );
