@@ -10,7 +10,7 @@ function HeroGallery() {
   const t = useTranslations("HeroContent.HeroGallery");
 
   return (
-    <figure className="group relative isolate mx-auto w-full max-w-7xl overflow-hidden max-xl:px-5 max-sm:px-2">
+    <figure className="group relative isolate mx-auto w-full max-w-7xl max-xl:px-5 max-sm:px-2">
       {/* Blurred glow background matching cut-out geometry */}
       <div
         aria-hidden="true"

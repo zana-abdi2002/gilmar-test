@@ -4,7 +4,7 @@ import HeroGallery from "./HeroGallery";
 
 function HeroSection() {
   return (
-    <div>
+    <div className="overflow-x-clip">
       <BackgroundEllipses />
       <HeroContent />
       <HeroGallery />
