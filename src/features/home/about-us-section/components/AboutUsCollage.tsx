@@ -8,37 +8,29 @@ function AboutUsCollage() {
 
   return (
     <figure
-      className="dir-ltr relative mx-auto aspect-[582/649] w-full max-w-[582px]"
+      className="@container relative mx-auto aspect-[582/649] w-full max-w-[582px]"
       aria-labelledby="about-us-collage-caption"
     >
+      {/* Design width 582px, base font 14px = 2.4055cqw; inner sizes in em */}
       <Image
         src={AboutUseCollageImg}
         alt={t("imageAlt")}
         fill
         priority
-        sizes="(min-width: 640px) 582px, calc(100vw - 2rem)"
+        sizes="(min-width: 582px) 582px, calc(100vw - 2rem)"
         className="object-contain"
       />
 
-      {/* Resort information pill */}
+      {/* Physical positions preserve the unmirrored image composition in RTL. */}
       <figcaption
         id="about-us-collage-caption"
-        className="absolute end-[3.2646%] top-[19.7226%] [aspect-ratio:244/72] w-[41.9244%] max-w-[244px]"
+        className="absolute end-[3.2646%] top-[19.7226%] aspect-[244/72] w-[41.9244%]"
       >
-        <FloatingInfoPill
-          label={t("resortName")}
-          icon={null}
-          className="h-full max-w-none"
-        />
+        <FloatingInfoPill label={t("resortName")} icon={null} />
       </figcaption>
 
-      {/* Nature information pill */}
-      <div className="absolute end-[42.7835%] top-[63.1741%] [aspect-ratio:249/72] w-[42.7835%] max-w-[249px]">
-        <FloatingInfoPill
-          label={t("natureCaption")}
-          icon={null}
-          className="h-full max-w-none"
-        />
+      <div className="absolute end-[42.7835%] top-[63.1741%] aspect-[249/72] w-[42.7835%]">
+        <FloatingInfoPill label={t("natureCaption")} icon={null} />
       </div>
     </figure>
   );
