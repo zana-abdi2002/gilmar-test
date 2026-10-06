@@ -28,6 +28,7 @@ const sizeClasses: Record<ActionButtonSize, string> = {
     "w-[164px]",
     "gap-4",
     "p-1.5",
+    "ps-3",
     "text-sm",
     "leading-[25px]",
     "[&>span:last-child]:size-[34px]",

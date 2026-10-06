@@ -12,6 +12,7 @@
   --navbar-surface: #fcfdfd;
   --navbar-border: #eef3f7;
   --navbar-ring: #ffffff;
+  --surface-primary: #ecfcef;
   --navbar-on-gradient: #ffffff;
   --primary-highlight: rgb(255 255 255 / 0.24);
   --hero-gallery-shadow: rgb(0 0 0 / 0.18);
@@ -40,6 +41,8 @@
   --shadow-floating-pill-icon: var(--floating-pill-icon-shadow);
 
   --color-primary-soft: var(--primary-soft);
+
+  --color-surface-primary: var(--surface-primary);
 
   --color-muted-foreground: var(--muted-foreground);
 
