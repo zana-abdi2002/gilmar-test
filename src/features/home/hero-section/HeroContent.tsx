@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import HeroActionButton from "./HeroActionButton";
+import HomeActionButton from "./HomeActionButton";
 
 async function HeroContent() {
   const t = await getTranslations("HeroContent");
@@ -24,7 +24,11 @@ async function HeroContent() {
       </div>
 
       {/* Button */}
-      <HeroActionButton />
+      <HomeActionButton
+        href="/suites"
+        label={t("heroActionLabel")}
+        size="large"
+      />
     </section>
   );
 }

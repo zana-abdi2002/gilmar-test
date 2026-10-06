@@ -1,8 +1,6 @@
 {
   "HeroContent": {
-    "HeroAction": {
-      "label": "مهمان گیلمار شو"
-    },
+    "heroActionLabel": "مهمان گیلمار شو",
     "HeroGallery": {
       "imageAlt": "نمای بیرونی اقامتگاه بوم‌گردی گیلمار در میان درختان",
       "natureCaption": "فرار از شلوغی شهر و تجربه‌ی اقامتی اصیل در دل طبیعت شمال",
