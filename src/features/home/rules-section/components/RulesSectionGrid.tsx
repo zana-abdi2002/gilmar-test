@@ -1,4 +1,6 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import DashLineBackground from "../assets/rule-items-dash-line.svg";
 import BelongingsIcon from "../assets/rules-belongings-icon.svg";
 import EnvironmentIcon from "../assets/rules-environment.svg";
 import RemainCalmIcon from "../assets/rules-remain-calm-icon.svg";
@@ -8,7 +10,15 @@ function RulesSectionGrid() {
   const t = useTranslations("Rules.items");
 
   return (
-    <div className="grid grid-cols-3 gap-8 px-47">
+    <div className="relative isolate grid grid-cols-3 gap-8 px-47">
+      {/* dash line background */}
+      <Image
+        src={DashLineBackground}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 inset-s-55 top-15.5 -z-10"
+      />
+
       {/* list of */}
       <RuleSectionItem
         cardIcon={BelongingsIcon}
