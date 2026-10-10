@@ -1,5 +1,5 @@
+import BackgroundVector from "@/features/general/assets/about-us-background-vector.svg";
 import Image from "next/image";
-import BackgroundVector from "../assets/about-us-background-vector.svg";
 import AboutUsCollage from "./AboutUsCollage";
 import AboutUsContent from "./AboutUsContent";
 
