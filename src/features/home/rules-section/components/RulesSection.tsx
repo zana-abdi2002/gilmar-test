@@ -1,7 +1,7 @@
 import BackgroundVector from "@/features/general/assets/about-us-background-vector.svg";
 import Image from "next/image";
-import RulesSectionGrid from "./RulesSectionGrid";
 import RulesSectionHeader from "./RulesSectionHeader";
+import RulesSectionList from "./RulesSectionList";
 
 function RulesSection() {
   return (
@@ -15,7 +15,7 @@ function RulesSection() {
       />
       <div className="flex flex-col gap-15 px-[15%]">
         <RulesSectionHeader />
-        <RulesSectionGrid />
+        <RulesSectionList />
       </div>
     </section>
   );

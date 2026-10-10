@@ -6,7 +6,7 @@ import EnvironmentIcon from "../assets/rules-environment.svg";
 import RemainCalmIcon from "../assets/rules-remain-calm-icon.svg";
 import RuleSectionItem from "./RuleSectionItem";
 
-function RulesSectionGrid() {
+function RulesSectionList() {
   const t = useTranslations("Rules.items");
 
   return (
@@ -45,7 +45,7 @@ function RulesSectionGrid() {
   );
 }
 
-export default RulesSectionGrid;
+export default RulesSectionList;
 
 // backgrounds -----------------------------------------
 
