@@ -5,14 +5,13 @@ import RulesSectionList from "./RulesSectionList";
 
 function RulesSection() {
   return (
-    <section className="relative isolate">
-      {/* grid background vector */}
+    <section aria-labelledby="rules-section-title" className="relative isolate">
       <Image
         src={BackgroundVector}
         alt=""
-        aria-hidden={true}
-        className="absolute inset-e-[2%] top-32 -z-10 overflow-hidden"
+        className="pointer-events-none absolute inset-e-[2%] top-32 -z-10"
       />
+
       <div className="flex flex-col gap-15 px-[15%]">
         <RulesSectionHeader />
         <RulesSectionList />

@@ -19,7 +19,7 @@ function RuleSectionItem({
   background,
 }: Props) {
   return (
-    <div className="relative isolate flex flex-col items-center justify-between gap-15">
+    <article className="relative isolate flex flex-col items-center justify-between gap-15">
       {/* item background shapes */}
       {background}
 
@@ -41,7 +41,7 @@ function RuleSectionItem({
         <h3 className="text-[16px] font-extrabold">{title}</h3>
         <p className="text-[14px] font-semibold">{description}</p>
       </div>
-    </div>
+    </article>
   );
 }
 
