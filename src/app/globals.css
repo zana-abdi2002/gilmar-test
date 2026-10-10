@@ -19,8 +19,8 @@
   --hero-gallery-shadow-hover: rgb(0 0 0 / 0.24);
   --hero-reservations-shadow:
     0 2px 2px rgb(0 0 0 / 0.02), 0 10px 41px rgb(0 0 0 / 0.04);
-  --floating-pill-start: #fcfcfd;
-  --floating-pill-end: rgb(252 252 253 / 0.83);
+  --floating-card-start: #fcfcfd;
+  --floating-card-end: rgb(252 252 253 / 0.83);
   --floating-pill-shadow: 0 40px 64px -32px rgb(15 15 15 / 0.1);
   --floating-pill-icon-shadow: 0 24px 48px rgb(0 46 37 / 0.12);
 }
@@ -41,6 +41,8 @@
   --shadow-floating-pill-icon: var(--floating-pill-icon-shadow);
 
   --color-primary-soft: var(--primary-soft);
+
+  --color-floating-card-start: var(--floating-card-start);
 
   --color-surface-primary: var(--surface-primary);
 
@@ -94,7 +96,7 @@ body {
 @utility bg-floating-pill {
   background-image: linear-gradient(
     83.59deg,
-    var(--floating-pill-start) 36.52%,
-    var(--floating-pill-end) 98.8%
+    var(--floating-card-start) 36.52%,
+    var(--floating-card-end) 98.8%
   );
 }

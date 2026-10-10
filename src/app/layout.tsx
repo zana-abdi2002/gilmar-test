@@ -19,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       dir="rtl"
       className={`h-full antialiased ${abarHigh.variable} ${abarMid.variable} ${abarLow.variable}`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col leading-8">
         <NextIntlClientProvider>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
             <ThemeProvider theme={theme}>
