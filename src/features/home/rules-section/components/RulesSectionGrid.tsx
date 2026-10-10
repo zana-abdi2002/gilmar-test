@@ -10,13 +10,13 @@ function RulesSectionGrid() {
   const t = useTranslations("Rules.items");
 
   return (
-    <div className="relative isolate grid grid-cols-3 gap-8 px-47">
+    <div className="relative isolate grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {/* dash line background */}
       <Image
         src={DashLineBackground}
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 inset-s-55 top-15.5 -z-10"
+        className="absolute inset-s-[15.2%] top-15.5 -z-10 overflow-hidden"
       />
 
       {/* list of */}
@@ -33,12 +33,14 @@ function RulesSectionGrid() {
         cardClassName="rotate-15"
         background={<PeaceBackground />}
       />
-      <RuleSectionItem
-        cardIcon={EnvironmentIcon}
-        title={t("environment.title")}
-        description={t("environment.description")}
-        background={<EnvironmentBackground />}
-      />
+      <div className="sm:col-span-2 sm:justify-self-center sm:px-10 lg:col-span-1 lg:px-0">
+        <RuleSectionItem
+          cardIcon={EnvironmentIcon}
+          title={t("environment.title")}
+          description={t("environment.description")}
+          background={<EnvironmentBackground />}
+        />
+      </div>
     </div>
   );
 }

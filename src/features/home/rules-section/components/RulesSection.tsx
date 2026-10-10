@@ -11,9 +11,9 @@ function RulesSection() {
         src={BackgroundVector}
         alt=""
         aria-hidden={true}
-        className="absolute inset-e-3.75 top-32 -z-10 overflow-hidden"
+        className="absolute inset-e-[2%] top-32 -z-10 overflow-hidden"
       />
-      <div className="flex flex-col gap-15">
+      <div className="flex flex-col gap-15 px-[15%]">
         <RulesSectionHeader />
         <RulesSectionGrid />
       </div>
