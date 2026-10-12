@@ -6,6 +6,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: "گیلمار",
@@ -17,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="fa-IR"
       dir="rtl"
-      className={`h-full antialiased ${abarHigh.variable} ${abarMid.variable} ${abarLow.variable}`}
+      className={cn("h-full", "antialiased", abarHigh.variable, abarMid.variable, abarLow.variable, "font-sans", geist.variable)}
     >
       <body className="flex min-h-full flex-col leading-8">
         <NextIntlClientProvider>
