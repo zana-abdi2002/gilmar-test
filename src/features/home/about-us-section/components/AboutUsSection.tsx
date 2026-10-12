@@ -5,7 +5,7 @@ import AboutUsContent from "./AboutUsContent";
 
 function AboutUsSection() {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="relative isolate mx-auto max-w-360 overflow-hidden">
       {/* Background Vector */}
       <Image
         src={BackgroundVector}

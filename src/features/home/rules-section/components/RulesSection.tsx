@@ -5,7 +5,10 @@ import RulesSectionList from "./RulesSectionList";
 
 function RulesSection() {
   return (
-    <section aria-labelledby="rules-section-title" className="relative isolate">
+    <section
+      aria-labelledby="rules-section-title"
+      className="relative isolate mx-auto max-w-360"
+    >
       <Image
         src={BackgroundVector}
         alt=""
