@@ -53,10 +53,10 @@ export default function SlideScale() {
       setApi={setApi}
       dir="ltr"
     >
-      <CarouselContent className="ml-0 py-3">
+      <CarouselContent className="-ml-5 py-3">
         {items.map((item, index) => (
           <CarouselItem
-            className={cn("h-86.5 w-[288px] pl-0 lg:basis-[33%]", {})}
+            className={cn("h-86.5 w-[288px] pl-5 lg:basis-[33%]", {})}
             key={item.label + index}
           >
             <Image
@@ -64,7 +64,7 @@ export default function SlideScale() {
               className={cn(
                 "size-full rounded-[20px] object-cover transition-transform",
                 {
-                  "scale-[0.6]": index !== current - 1,
+                  "scale-[0.9]": index !== current - 1,
                 },
               )}
               src={item.image}
