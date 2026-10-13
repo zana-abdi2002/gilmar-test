@@ -14,7 +14,7 @@ function ResidenceTypeItem({ imgSrc, title, price }: Props) {
   const format = useFormatter();
 
   return (
-    <div className="relative size-[21vw] overflow-hidden rounded-[20px]">
+    <div className="relative size-62 overflow-hidden rounded-[20px] xl:size-[21vw] 2xl:size-75">
       {/* image */}
       <div
         aria-hidden="true"

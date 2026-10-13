@@ -32,7 +32,7 @@ function ResidenceTypesList() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="mx-auto grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 xl:grid-cols-4 xl:gap-6">
       {items.map((item) => (
         <ResidenceTypeItem
           key={JSON.stringify(item)}
