@@ -53,7 +53,7 @@ export default function SlideScale() {
       setApi={setApi}
       dir="ltr"
     >
-      <CarouselContent className="-ml-5 py-3">
+      <CarouselContent className="-ml-5">
         {items.map((item, index) => (
           <CarouselItem
             className={cn("h-86.5 w-[288px] pl-5 lg:basis-[33%]", {})}
