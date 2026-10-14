@@ -6,8 +6,8 @@ import useEmblaCarousel, {
 } from "embla-carousel-react";
 import * as React from "react";
 
+import CustomArrowIconRight from "@/features/general/assets/CustomArrowRightIcon.svg";
 import Image from "next/image";
-import CustomArrowIconRight from "../../assets/CustomArrowRightIcon.svg";
 import { Button } from "./shadcn-button";
 
 type CarouselApi = UseEmblaCarouselType[1];

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import HomeActionButton from "../../hero-section/HomeActionButton";
+import HomeActionButton from "../../../general/components/HomeActionButton";
 import AboutUsIcon from "../assets/about-us-icon.svg";
 
 function AboutUsContent() {

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import HomeActionButton from "./HomeActionButton";
+import HomeActionButton from "../../general/components/HomeActionButton";
 
 async function HeroContent() {
   const t = await getTranslations("HeroContent");

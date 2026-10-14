@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   type CarouselApi,
-} from "@/features/general/shadcn/components/carousel";
+} from "@/features/general/components/shadcn/components/carousel";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
