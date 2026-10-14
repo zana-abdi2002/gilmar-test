@@ -12,7 +12,10 @@ function ResidencesSectionHeader() {
 
       {/* title and description */}
       <div className="flex flex-col gap-5 text-center">
-        <h2 id="residences-heading" className="text-[2rem] font-extrabold">
+        <h2
+          id="residences-heading"
+          className="text-[2rem] leading-12 font-extrabold"
+        >
           {t("title")}
         </h2>
         <p className="text-muted-foreground text-[0.875rem] font-semibold">

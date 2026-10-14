@@ -16,7 +16,7 @@ function RulesSectionHeader() {
       <div className="flex w-full flex-col items-center gap-5 text-center">
         <h2
           id="rules-section-title"
-          className="text-center text-3xl font-extrabold"
+          className="text-center text-3xl leading-12 font-extrabold"
         >
           {t("title")}
         </h2>
