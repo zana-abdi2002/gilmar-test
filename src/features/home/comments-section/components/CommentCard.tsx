@@ -1,7 +1,9 @@
+import { CommentAuthorRole } from "../types";
+
 type Props = {
   comment: string;
   fullName: string;
-  role: "guest" | "owner";
+  role: CommentAuthorRole;
 };
 
 function CommentCard() {
