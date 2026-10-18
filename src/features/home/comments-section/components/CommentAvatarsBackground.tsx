@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { getHomeComments } from "../lib/getHomeComments";
 
-async function CommentsAvatarsBackground() {
+async function CommentAvatarsBackground() {
   const comments = await getHomeComments();
   const [avatar1, avatar2, avatar3, avatar4, avatar5] = comments
     .map((comment) => comment.author.avatar)
     .slice(0, 5);
 
   return (
-    <div className="pointer-events-none">
+    <div className="pointer-events-none absolute inset-0">
       {/* start */}
       <Image
         src={avatar3.src}
@@ -38,7 +38,7 @@ async function CommentsAvatarsBackground() {
         alt={avatar1.alt || ""}
         width={60}
         height={60}
-        className="absolute inset-e-[20%] top-[10%] w-[5.13%] rounded-full object-cover"
+        className="absolute inset-e-[17%] top-[10%] w-[5.13%] rounded-full object-cover"
       />
       <Image
         src={avatar2.src}
@@ -59,10 +59,10 @@ async function CommentsAvatarsBackground() {
         alt={avatar4.alt || ""}
         width={60}
         height={60}
-        className="absolute inset-e-[25%] top-[60%] w-[5.13%] rounded-full object-cover"
+        className="absolute inset-e-[22%] top-[60%] w-[5.13%] rounded-full object-cover"
       />
     </div>
   );
 }
 
-export default CommentsAvatarsBackground;
+export default CommentAvatarsBackground;

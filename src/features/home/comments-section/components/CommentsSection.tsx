@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Suspense } from "react";
 import BackgroundVector from "../assets/comments-section-background-vector.svg";
-import CommentsAvatarsBackground from "./CommentsAvatarsBackground";
-import CommentsSectionCarousel from "./CommentsSectionCarousel";
+import CommentAvatarsBackground from "./CommentAvatarsBackground";
+import CommentsCarouselDataProvider from "./CommentsCarouselDataProvider";
 import CommentsSectionHeader from "./CommentsSectionHeader";
 
 function CommentsSection() {
@@ -10,12 +10,14 @@ function CommentsSection() {
     <div className="relative isolate mx-auto w-full max-w-360 px-[6.25vw]">
       <CommentsSectionHeader />
 
-      <div className="relative isolate aspect-1196/597 w-full">
+      <div className="relative isolate flex aspect-1260/474 w-full flex-col items-center justify-center">
         <Suspense>
-          <CommentsAvatarsBackground />
+          <CommentAvatarsBackground />
         </Suspense>
 
-        <CommentsSectionCarousel />
+        <Suspense>
+          <CommentsCarouselDataProvider />
+        </Suspense>
 
         {/* map background vector */}
         <Image

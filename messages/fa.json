@@ -86,6 +86,12 @@
     "title": "تور ویدیویی اقامتگاه گیلمار"
   },
   "general": {
-    "currencyUnit": "تومان"
+    "currencyUnit": "تومان",
+    "aCommentFrom": "نظری از",
+    "profilePictureOf": "تصویر پروفایل",
+    "Roles": {
+      "owner": "صاحب اقامتگاه",
+      "guest": "مهمان"
+    }
   }
 }
