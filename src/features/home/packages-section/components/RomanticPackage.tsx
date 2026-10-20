@@ -1,4 +1,5 @@
-import { useTranslations } from "next-intl";
+import HomeActionButton from "@/features/general/components/HomeActionButton";
+import { useFormatter, useTranslations } from "next-intl";
 import BoatIcon from "../assets/boat-icon.svg";
 import CoconutIcon from "../assets/coconut-icon.svg";
 import MountainIcon from "../assets/mountain-icon.svg";
@@ -14,6 +15,8 @@ const ITEMS = [
 
 function RomanticPackage() {
   const t = useTranslations("Packages.Romantic");
+  const tGeneral = useTranslations("general");
+  const format = useFormatter();
 
   return (
     <div className="flex flex-col gap-6">
@@ -38,9 +41,16 @@ function RomanticPackage() {
       <hr className="w-full border-0 border-t border-dashed border-gray-300" />
 
       {/* price and action */}
-      <div className="flex justify-between">
-        <p></p>
-        <div></div>
+      <div className="flex items-center justify-between text-[#43A047]">
+        <p className="text-[1rem] font-extrabold">
+          {tGeneral("price")}: {format.number(2300000)}{" "}
+          {tGeneral("currencyUnit")}
+        </p>
+        <HomeActionButton
+          href="/reservation/123"
+          label="همین حالا رزرو کن"
+          size="medium"
+        />
       </div>
     </div>
   );
