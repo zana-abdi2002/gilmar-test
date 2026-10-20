@@ -74,7 +74,7 @@ export default function CommentsCarousel({ comments }: Props) {
             className={cn(
               "h-2 cursor-pointer rounded-full transition-all duration-500 ease-in-out",
               index === current
-                ? "bg-primary w-4 opacity-100"
+                ? "bg-primary-gradient w-4 opacity-100"
                 : "bg-muted-foreground w-2 opacity-30 hover:opacity-50",
             )}
             onClick={() => api?.scrollTo(index)}
