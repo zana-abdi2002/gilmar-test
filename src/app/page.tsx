@@ -1,6 +1,7 @@
 import AboutUsSection from "@/features/home/about-us-section/components/AboutUsSection";
 import CommentsSection from "@/features/home/comments-section/components/CommentsSection";
 import HeroSection from "@/features/home/hero-section/HeroSection";
+import PackagesSection from "@/features/home/packages-section/components/PackagesSection";
 import ResidencesSection from "@/features/home/residences-section/components/ResidencesSection";
 import RulesSection from "@/features/home/rules-section/components/RulesSection";
 import ServicesSection from "@/features/home/services-section/components/ServicesSection";
@@ -16,8 +17,9 @@ export default function Home() {
       <ResidencesSection />
       <VideoSection />
       <CommentsSection />
+      <PackagesSection />
+
       {/*
-        <PackagesSection />
         <BlogSection />
         <TestimonialsSection />
         <FaqSection /> */}
