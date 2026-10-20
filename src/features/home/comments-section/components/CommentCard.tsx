@@ -20,13 +20,15 @@ function CommentCard({ comment, fullName, role }: Props) {
       {/* quote icon */}
       <Image src={QuoteIcon} alt="" />
       {/* comment */}
-      <p className="text-muted-foreground text-[0.875rem] font-semibold">
+      <p className="text-muted-foreground text-xs font-semibold sm:text-[1rem]">
         {comment}
       </p>
       {/* name and role */}
       <div className="flex flex-col gap-1">
-        <p className="font-extrabold">{fullName}</p>
-        <p className="text-muted-foreground font-semibold">{t(role)}</p>
+        <p className="text-xs font-extrabold sm:text-[1rem]">{fullName}</p>
+        <p className="text-muted-foreground text-xs font-semibold sm:text-[1rem]">
+          {t(role)}
+        </p>
       </div>
     </div>
   );

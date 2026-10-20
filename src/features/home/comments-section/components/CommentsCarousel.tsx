@@ -40,39 +40,37 @@ export default function CommentsCarousel({ comments }: Props) {
   return (
     <Carousel
       setApi={setApi}
-      className="flex w-[37%] flex-col items-center justify-center"
+      className="min-w-0 max-[640px]:w-[70%] max-[380px]:w-full sm:w-[60%] lg:w-[37%]"
       dir="ltr"
     >
       <CarouselContent>
         {comments.map((comment) => (
           <CarouselItem
             key={comment.id}
-            className="mx-auto flex flex-col items-center justify-center"
+            className="flex min-w-0 flex-col items-center justify-center gap-4"
           >
-            {/* comment avatar */}
             <Image
               src={comment.author.avatar.src}
               width={100}
               height={100}
-              alt={`${t("profilePictureOf")} ${comment.author.firstName + comment.author.lastName}`}
-              className="rounded-full object-cover"
+              alt={`${t("profilePictureOf")} ${comment.author.firstName} ${comment.author.lastName}`}
+              className="size-[clamp(60px,6.94vw,100px)] rounded-full object-cover"
             />
 
-            {/* comment card */}
             <CommentCard
               comment={comment.description}
-              fullName={comment.author.firstName + comment.author.lastName}
+              fullName={`${comment.author.firstName} ${comment.author.lastName}`}
               role={comment.author.role}
             />
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      {/* Dots Navigation */}
       <div className="flex justify-center gap-2 py-3">
         {Array.from({ length: count }).map((_, index) => (
           <button
             key={index}
+            type="button"
             className={cn(
               "h-2 cursor-pointer rounded-full transition-all duration-500 ease-in-out",
               index === current
