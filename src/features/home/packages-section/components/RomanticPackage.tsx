@@ -35,7 +35,7 @@ function RomanticPackage() {
       </div>
 
       {/* line */}
-      <div></div>
+      <hr className="w-full border-0 border-t border-dashed border-gray-300" />
 
       {/* price and action */}
       <div className="flex justify-between">
