@@ -1,4 +1,16 @@
 import { useTranslations } from "next-intl";
+import BoatIcon from "../assets/boat-icon.svg";
+import CoconutIcon from "../assets/coconut-icon.svg";
+import MountainIcon from "../assets/mountain-icon.svg";
+import TenetIcon from "../assets/tenet-icon.svg";
+import PackageCardItem from "./PackageCardItem";
+
+const ITEMS = [
+  { id: 0, imgSrc: TenetIcon, description: "1 شب اقامت" },
+  { id: 1, imgSrc: CoconutIcon, description: "صبحانه" },
+  { id: 2, imgSrc: BoatIcon, description: "قایق سواری" },
+  { id: 3, imgSrc: MountainIcon, description: "تور جنگل" },
+];
 
 function RomanticPackage() {
   const t = useTranslations("Packages.Romantic");
@@ -12,7 +24,15 @@ function RomanticPackage() {
       </div>
 
       {/* package items */}
-      <div></div>
+      <div className="grid grid-cols-2 justify-between justify-items-center sm:grid-cols-4">
+        {ITEMS.map((item) => (
+          <PackageCardItem
+            key={item.id}
+            imageSrc={item.imgSrc}
+            description={item.description}
+          />
+        ))}
+      </div>
 
       {/* line */}
       <div></div>
