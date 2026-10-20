@@ -7,8 +7,8 @@ export const mockHomeComments: HomeComment[] = [
     description:
       "تجربه‌ای فوق‌العاده در دل طبیعت بود. فضای اقامتگاه بسیار آرام و تمیز بود و رفتار کارکنان حس خوبی به ما می‌داد.",
     author: {
-      firstName: "سارا",
-      lastName: "احمدی",
+      firstName: "زانا",
+      lastName: "عبدی",
       role: "guest",
       avatar: {
         src: "/images/reviewer-1.png",
