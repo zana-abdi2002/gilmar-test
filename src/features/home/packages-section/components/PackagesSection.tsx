@@ -1,12 +1,13 @@
 import BackgroundVector from "@/features/general/assets/background-vector.svg";
 import Image from "next/image";
-import PackagesSectionCarousel from "./PackagesSectionCarousel";
+import { Suspense } from "react";
+import PackagesCarouselDataProvider from "./PackagesCarouselDataProvider";
 import PackagesSectionHeader from "./PackagesSectionHeader";
 import RomanticPackage from "./RomanticPackage";
 
 function PackagesSection() {
   return (
-    <div className="relative isolate mx-auto flex w-full max-w-360 justify-between px-[5.55vw]">
+    <div className="relative isolate mx-auto flex w-full max-w-360 flex-col justify-between gap-12 px-[5.55vw] lg:flex-row lg:items-center">
       {/* background vector */}
       <Image
         src={BackgroundVector}
@@ -15,13 +16,15 @@ function PackagesSection() {
       />
 
       {/* section content */}
-      <div className="flex flex-col justify-center gap-12">
+      <div className="flex shrink-0 flex-col justify-center gap-12 lg:w-[clamp(28rem,42%,36rem)]">
         <PackagesSectionHeader />
         <RomanticPackage />
       </div>
 
       {/* images carousel */}
-      <PackagesSectionCarousel />
+      <Suspense>
+        <PackagesCarouselDataProvider />
+      </Suspense>
     </div>
   );
 }
