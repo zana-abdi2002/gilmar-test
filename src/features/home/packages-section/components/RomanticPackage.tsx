@@ -27,7 +27,7 @@ function RomanticPackage() {
       </div>
 
       {/* package items */}
-      <div className="grid grid-cols-2 justify-between justify-items-center sm:grid-cols-4">
+      <div className="grid grid-cols-2 justify-between justify-items-center gap-y-6 lg:grid-cols-4">
         {ITEMS.map((item) => (
           <PackageCardItem
             key={item.id}

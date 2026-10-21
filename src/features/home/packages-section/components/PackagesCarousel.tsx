@@ -34,7 +34,7 @@ export default function PackagesCarousel({ items }: Props) {
   }, [api]);
 
   return (
-    <div className="relative isolate min-w-0 flex-[0.7] **:px-0">
+    <div className="relative isolate min-w-0 flex-1 **:px-0">
       <Carousel setApi={setApi} className="" dir="ltr">
         <CarouselContent className="ml-0">
           {items.map((image) => (
