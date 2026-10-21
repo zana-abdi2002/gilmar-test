@@ -1,4 +1,5 @@
 import AboutUsSection from "@/features/home/about-us-section/components/AboutUsSection";
+import BlogSection from "@/features/home/blog-section/components/BlogSection";
 import CommentsSection from "@/features/home/comments-section/components/CommentsSection";
 import HeroSection from "@/features/home/hero-section/HeroSection";
 import PackagesSection from "@/features/home/packages-section/components/PackagesSection";
@@ -18,9 +19,9 @@ export default function Home() {
       <VideoSection />
       <CommentsSection />
       <PackagesSection />
+      <BlogSection />
 
       {/*
-        <BlogSection />
         <TestimonialsSection />
         <FaqSection /> */}
     </main>
