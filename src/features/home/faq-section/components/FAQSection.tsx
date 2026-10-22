@@ -1,19 +1,27 @@
 import BackgroundVector from "@/features/general/assets/background-vector.svg";
 import Image from "next/image";
-import FAQSectionAccordion from "./FAQSectionAccordion";
+import { Suspense } from "react";
 import FAQSectionHeader from "./FAQSectionHeader";
+import HomeFAQDataProvider from "./HomeFAQDataProvider";
 
 function FAQSection() {
   return (
-    <div className="relative isolate mx-auto flex w-full max-w-360 items-center justify-between gap-10 px-[5.55vw]">
+    <div className="relative isolate mx-auto flex w-full max-w-360 items-start justify-between gap-10 px-[5.55vw]">
+      {/* header */}
+
       <FAQSectionHeader />
-      <FAQSectionAccordion />
+
+      {/* accordion */}
+      <Suspense>
+        {/* TODO: add fallback skeleton */}
+        <HomeFAQDataProvider />
+      </Suspense>
 
       {/* background vector */}
       <Image
         src={BackgroundVector}
         alt=""
-        className="pointer-events-none absolute inset-e-0 top-0 -z-10"
+        className="pointer-events-none absolute inset-s-0 top-0 -z-10"
       />
     </div>
   );
