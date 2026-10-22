@@ -7,7 +7,7 @@ function FAQSectionHeader() {
   const t = useTranslations("FAQ");
 
   return (
-    <div className="flex max-w-155 flex-col items-start justify-between gap-8">
+    <div className="flex max-w-155 flex-col items-center justify-between gap-8 lg:items-start">
       {/* icon */}
       <Image
         src={BackgroundIcon}
@@ -16,7 +16,7 @@ function FAQSectionHeader() {
       />
 
       {/* title and description */}
-      <div className="flex flex-col items-start justify-between gap-5">
+      <div className="flex flex-col items-center justify-between gap-5 text-center lg:items-start lg:text-start">
         <h2 className="text-[2rem] font-extrabold">{t("title")}</h2>
         <p className="text-muted-foreground text-[0.875rem] font-semibold">
           {t("description")}

@@ -41,7 +41,7 @@ function RomanticPackage() {
       <hr className="w-full border-0 border-t border-dashed border-gray-300" />
 
       {/* price and action */}
-      <div className="flex items-center justify-between text-[#43A047]">
+      <div className="flex flex-col items-center justify-between gap-3 text-[#43A047] sm:flex-row">
         <p className="text-[1rem] font-extrabold">
           {tGeneral("price")}: {format.number(2300000)}{" "}
           {tGeneral("currencyUnit")}
