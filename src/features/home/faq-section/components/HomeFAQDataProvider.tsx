@@ -10,7 +10,6 @@ function HomeFAQDataProvider() {
         FAQs.map((faq) => (
           <HomeFAQAccordion
             key={faq.id}
-            id={faq.id}
             summary={faq.summary}
             details={faq.details}
           />
