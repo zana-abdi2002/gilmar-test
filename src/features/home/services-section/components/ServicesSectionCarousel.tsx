@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "@/features/general/components/shadcn/components/carousel";
 import { cn } from "@/lib/utils";
+import Autoplay from "embla-carousel-autoplay";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import * as React from "react";
@@ -52,6 +53,11 @@ export default function SlideScale() {
       opts={{ loop: true }}
       setApi={setApi}
       dir="ltr"
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
     >
       <CarouselContent className="-ml-5">
         {items.map((item, index) => (
