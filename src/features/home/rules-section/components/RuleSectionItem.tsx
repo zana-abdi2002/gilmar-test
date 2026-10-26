@@ -25,7 +25,7 @@ function RuleSectionItem({
 
       {/* item card and icon */}
       <Card
-        className={`bg-floating-card-start flex h-40 w-32 items-center justify-center rounded-3xl border border-[#F4F5F6] shadow-2xl ${cardClassName}`}
+        className={`bg-floating-card-start flex h-40 w-32 items-center justify-center rounded-3xl border border-[#F4F5F6] shadow-lg ${cardClassName}`}
       >
         <Image
           src={cardIcon}
