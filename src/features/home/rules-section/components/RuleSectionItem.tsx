@@ -33,6 +33,7 @@ function RuleSectionItem({
           aria-hidden="true"
           // width={96}
           // height={96}
+          className="transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105"
         />
       </Card>
 
