@@ -7,7 +7,7 @@ function AboutUsContent() {
   const t = useTranslations("AboutUs.Content");
 
   return (
-    <div className="w-full max-w-155 gap-4">
+    <div className="w-full max-w-155 gap-4 pt-2">
       <div className="flex flex-col items-center gap-5 text-center lg:items-start lg:text-start">
         {/* Decorative badge: artwork exported from Figma */}
         <div className="border-primary-soft bg-surface-primary ring-navbar-ring h-13 w-21 overflow-hidden rounded-full border ring-4">
