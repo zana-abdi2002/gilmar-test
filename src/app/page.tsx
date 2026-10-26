@@ -2,6 +2,7 @@ import AboutUsSection from "@/features/home/about-us-section/components/AboutUsS
 import BlogSection from "@/features/home/blog-section/components/BlogSection";
 import CommentsSection from "@/features/home/comments-section/components/CommentsSection";
 import FAQSection from "@/features/home/faq-section/components/FAQSection";
+import FooterSection from "@/features/home/footer-section/components/FooterSection";
 import HeroSection from "@/features/home/hero-section/HeroSection";
 import PackagesSection from "@/features/home/packages-section/components/PackagesSection";
 import ResidencesSection from "@/features/home/residences-section/components/ResidencesSection";
@@ -22,11 +23,7 @@ export default function Home() {
       <PackagesSection />
       <BlogSection />
       <FAQSection />
-
-      {/*
-        <TestimonialsSection />
-        
-        */}
+      <FooterSection />
     </main>
   );
 }
