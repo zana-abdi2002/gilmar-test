@@ -14,7 +14,7 @@ function HomeFAQAccordion({ id, summary, details }: Props) {
       <Accordion className="bg-navbar-surface border-navbar-border w-full overflow-hidden rounded-[20px] border shadow-lg ring-3 ring-white">
         <AccordionSummary
           expandIcon={<CustomDownwardIcon />}
-          className="text-[0.875rem] font-extrabold"
+          className="text-[0.75rem] font-extrabold sm:text-[0.875rem]"
         >
           {summary}
         </AccordionSummary>
