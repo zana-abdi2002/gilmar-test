@@ -6,7 +6,7 @@ function PackagesSectionHeader() {
   const t = useTranslations("Packages");
 
   return (
-    <div className="flex flex-col items-start gap-8">
+    <div className="flex flex-col items-center gap-8 text-center lg:items-start lg:text-start">
       {/* icon */}
       <Image
         src={HeaderIcon}
