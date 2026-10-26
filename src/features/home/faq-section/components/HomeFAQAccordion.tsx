@@ -6,9 +6,9 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { FAQAccordion } from "../types";
 
-type Props = FAQAccordion;
+type Props = Omit<FAQAccordion, "id">;
 
-function HomeFAQAccordion({ id, summary, details }: Props) {
+function HomeFAQAccordion({ summary, details }: Props) {
   return (
     <div className="flex w-full max-w-155 grow flex-col items-end justify-between gap-4">
       <Accordion className="bg-navbar-surface border-navbar-border w-full overflow-hidden rounded-[20px] border shadow-lg ring-3 ring-white">
