@@ -9,6 +9,7 @@ import {
   type CarouselApi,
 } from "@/features/general/components/shadcn/components/carousel";
 import { cn } from "cn";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { PackageCarouselItem } from "../types";
 
@@ -35,7 +36,16 @@ export default function PackagesCarousel({ items }: Props) {
 
   return (
     <div className="relative isolate min-w-0 flex-[0.7] **:px-0">
-      <Carousel setApi={setApi} className="" dir="ltr">
+      <Carousel
+        setApi={setApi}
+        className=""
+        dir="ltr"
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
+      >
         <CarouselContent className="ml-0">
           {items.map((image) => (
             <CarouselItem key={image.id} className="pl-0">
