@@ -5,7 +5,7 @@ type Props = Omit<BlogCardType, "id">;
 
 function BlogCard({ title, description, imgSrc }: Props) {
   return (
-    <div className="relative isolate aspect-408/482 w-full overflow-hidden rounded-2xl">
+    <div className="relative isolate aspect-408/482 w-full overflow-hidden rounded-2xl p-6 shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-102 hover:shadow-xl">
       <Image
         src={imgSrc}
         alt={title}
