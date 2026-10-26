@@ -14,7 +14,7 @@ function CommentCard({ comment, fullName, role }: Props) {
 
   return (
     <div
-      className="bg-navbar-surface flex w-full flex-col items-center gap-4 rounded-2xl border border-[#EEF3F6] p-2 text-center shadow-2xl"
+      className="bg-navbar-surface flex w-full flex-col items-center gap-4 rounded-2xl border border-[#EEF3F6] p-2 text-center"
       dir="rtl"
     >
       {/* quote icon */}
