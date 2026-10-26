@@ -6,9 +6,8 @@ import HomeFAQDataProvider from "./HomeFAQDataProvider";
 
 function FAQSection() {
   return (
-    <div className="relative isolate mx-auto flex w-full max-w-360 flex-col items-start justify-between gap-10 px-[5.55vw] lg:flex-row">
+    <div className="relative isolate mx-auto flex w-full max-w-360 flex-col items-center justify-between gap-10 px-[5.55vw] lg:flex-row lg:items-start">
       {/* header */}
-
       <FAQSectionHeader />
 
       {/* accordion */}

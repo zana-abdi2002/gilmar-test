@@ -12,7 +12,7 @@ function FAQSectionHeader() {
       <Image
         src={BackgroundIcon}
         alt=""
-        className="w-[clamp(50px,5.83vw,83px)]"
+        className="w-[clamp(70px,5.83vw,83px)]"
       />
 
       {/* title and description */}
