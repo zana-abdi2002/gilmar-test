@@ -12,7 +12,7 @@ import VideoSection from "@/features/home/video-section/components/VideoSection"
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-15 pt-10">
+    <main className="flex flex-col gap-15 py-10">
       <HeroSection />
       <AboutUsSection />
       <RulesSection />
