@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 import {
   Carousel,
   CarouselContent,
@@ -9,8 +7,10 @@ import {
   type CarouselApi,
 } from "@/features/general/components/shadcn/components/carousel";
 import { cn } from "cn";
+import Autoplay from "embla-carousel-autoplay";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { HomeComment } from "../types";
 import CommentCard from "./CommentCard";
 
@@ -42,6 +42,11 @@ export default function CommentsCarousel({ comments }: Props) {
       setApi={setApi}
       className="min-w-0 max-[640px]:w-[70%] max-[380px]:w-full sm:w-[60%] lg:w-[37%]"
       dir="ltr"
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
     >
       <CarouselContent>
         {comments.map((comment) => (
