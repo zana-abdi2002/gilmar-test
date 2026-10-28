@@ -1,5 +1,5 @@
+import HomeActionButton from "@/features/general/components/HomeActionButton";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "صفحه پیدا نشد | گیلمار",
@@ -101,26 +101,7 @@ export default function NotFound() {
           </p>
         </div>
 
-        <Link
-          href="/"
-          className="group inline-flex items-center gap-3 rounded-full bg-linear-to-r from-emerald-400 to-cyan-500 py-2 ps-2 pe-6 font-bold text-white shadow-lg shadow-cyan-500/30 transition hover:shadow-xl hover:shadow-cyan-500/40 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-600"
-        >
-          <span className="flex size-10 items-center justify-center rounded-full bg-white text-emerald-500">
-            <svg
-              viewBox="0 0 24 24"
-              className="size-5 transition-transform group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </span>
-          بازگشت به صفحه اصلی
-        </Link>
+        <HomeActionButton href={"/"} label="بازگشت به صفحه اصلی" size="large" />
 
         {/* forest card, echoing the hero photo of the landing page */}
         <div className="relative mx-auto mt-20 h-56 w-full max-w-5xl overflow-hidden rounded-3xl bg-linear-to-b from-emerald-800 to-emerald-950 shadow-2xl shadow-emerald-900/30 sm:h-72">
