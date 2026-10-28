@@ -21,7 +21,6 @@ import WatchingBirds from "../assets/woman-taking-photos-of-birds.webp";
 export default function SlideScale() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
-  console.log("current :", current);
   const t = useTranslations("Services");
 
   const items = [
